@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Netflix Login</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('https://assets.nflxext.com/ffe/siteui/vlv3/1f2059d5-5b4c-44e2-ae64-4078a0a6ef29/dba85948-26e9-4082-9c97-3912cbe0e9fd/IN-en-20230703-popsignuptwoweeks-perspective_alpha_website_large.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .login-container {
+      background-color: rgba(0, 0, 0, 0.75);
+      width: 320px;
+      padding: 40px;
+      margin: 100px auto;
+      border-radius: 5px;
+      color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    .logo {
+      width: 120px;
+      display: block;
+      margin: 0 auto 20px;
+    }
+
+    .login-form h1 {
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+
+    .login-form input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      background: #333;
+      border: none;
+      color: white;
+      border-radius: 4px;
+    }
+
+    .login-form button {
+      width: 100%;
+      padding: 10px;
+      background: #e50914;
+      border: none;
+      color: white;
+      font-weight: bold;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .options {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9em;
+      margin-top: 10px;
+    }
+
+    .options a {
+      color: #b3b3b3;
+      text-decoration: none;
+    }
+
+    .signup {
+      margin-top: 30px;
+      font-size: 0.9em;
+      color: #b3b3b3;
+    }
+
+    .signup a {
+      color: #fff;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" class="logo" alt="Netflix Logo" />
+    <form class="login-form">
+      <h1>Sign In</h1>
+      <input type="email" placeholder="Email or phone number" required />
+      <input type="password" placeholder="Password" required />
+      <button type="submit">Sign In</button>
+      <div class="options">
+        <label><input type="checkbox" /> Remember me</label>
+        <a href="#">Need help?</a>
+      </div>
+      <div class="signup">
+        <p>New to Netflix? <a href="#">Sign up now</a>.</p>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
